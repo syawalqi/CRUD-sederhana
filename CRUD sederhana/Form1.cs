@@ -29,7 +29,7 @@ namespace CRUD_sederhana
         // Event handler saat form pertama kali dimuat
         private void Form1_Load(object sender, EventArgs e)
         {
-            LoadData();
+            LoadData(); // Memuat data ke dalam DataGridView
         }
 
         // Fungsi untuk mengosongkan semua input pada TextBox
