@@ -17,6 +17,8 @@ namespace CRUD_sederhana
     // Kelas utama Form1 yang merupakan turunan dari Form
     public partial class Form1 : Form
     {
+
+        // String koneksi ke database SQL Server (sesuaikan dengan koneksi database yang digunakan)
         private string connectionString = "Data Source=LAPTOP-PFIH6R5H\\GALIHMAULANA;Initial Catalog=OrganisasiMahasiswa;Integrated Security=True";
 
         public Form1()
