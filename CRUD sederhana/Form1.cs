@@ -43,7 +43,7 @@ namespace CRUD_sederhana
             txtNIM.Focus();  // Fokus kembali ke NIM agar user siap memasukkan data baru
         }
 
-        // Fungsi untuk menampilkan data di DataGridView
+        // Fungsi untuk mengambil data dari database dan menampilkannya di DataGridView
         private void LoadData()
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
