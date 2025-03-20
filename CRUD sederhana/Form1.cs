@@ -74,7 +74,7 @@ namespace CRUD_sederhana
 
         private void btnTambah_Click(object sender, EventArgs e) // Event handler tombol "Tambah" untuk menambahkan data baru
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(connectionString))// Membuka koneksi database
             {
                 try
                 {
