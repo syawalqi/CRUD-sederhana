@@ -164,7 +164,7 @@ namespace CRUD_sederhana
 
         private void btnUbah_Click(object sender, EventArgs e) // Event handler tombol "Ubah" untuk memperbarui data
         {
-            if (txtNIM.Text == "")
+            if (txtNIM.Text == "")// Memastikan NIM diisi sebelum update
             {
                 MessageBox.Show("Pilih data yang ingin diperbarui!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
