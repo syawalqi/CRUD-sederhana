@@ -59,7 +59,7 @@ namespace CRUD_sederhana
                     dgvMahasiswa.AutoGenerateColumns = true; // Mengatur DataGridView untuk otomatis menampilkan kolom
                     dgvMahasiswa.DataSource = dt; // Menampilkan data di DataGridView
 
-                    // Tambahkan ini untuk debugging
+                    // Menampilkan jumlah data untuk debugging
                     MessageBox.Show($"Jumlah Data: {dt.Rows.Count}", "Debugging Data", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     ClearForm();
