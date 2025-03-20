@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms; // Digunakan untuk membangun aplikasi Windows Forms
 
+
+// Namespace untuk proyek CRUD sederhana
 namespace CRUD_sederhana
 {
     public partial class Form1 : Form
