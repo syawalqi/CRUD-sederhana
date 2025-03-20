@@ -21,7 +21,7 @@ namespace CRUD_sederhana
         // String koneksi ke database SQL Server (sesuaikan dengan koneksi database yang digunakan)
         private string connectionString = "Data Source=LAPTOP-PFIH6R5H\\GALIHMAULANA;Initial Catalog=OrganisasiMahasiswa;Integrated Security=True";
 
-        public Form1()
+        public Form1() // Konstruktor Form1
         {
             InitializeComponent();
         }
