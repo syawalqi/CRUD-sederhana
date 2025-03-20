@@ -46,7 +46,7 @@ namespace CRUD_sederhana
         // Fungsi untuk mengambil data dari database dan menampilkannya di DataGridView
         private void LoadData()
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(connectionString)) // Membuka koneksi database
             {
                 try
                 {
