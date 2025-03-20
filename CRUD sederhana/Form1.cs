@@ -26,7 +26,7 @@ namespace CRUD_sederhana
             InitializeComponent(); // Inisialisasi komponen UI
         }
 
-        // Event saat form pertama kali dimuat
+        // Event handler saat form pertama kali dimuat
         private void Form1_Load(object sender, EventArgs e)
         {
             LoadData();
