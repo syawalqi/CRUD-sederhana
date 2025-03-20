@@ -54,7 +54,7 @@ namespace CRUD_sederhana
                     string query = "SELECT NIM AS [NIM], Nama, Email, Telepon, Alamat FROM Mahasiswa"; // Query SQL untuk mengambil data
                     SqlDataAdapter da = new SqlDataAdapter(query, conn); // Menggunakan adapter untuk menjalankan query
                     DataTable dt = new DataTable(); // Membuat objek DataTable untuk menampung data
-                    da.Fill(dt);
+                    da.Fill(dt); // Mengisi DataTable dengan hasil query
 
                     dgvMahasiswa.AutoGenerateColumns = true;
                     dgvMahasiswa.DataSource = dt;
