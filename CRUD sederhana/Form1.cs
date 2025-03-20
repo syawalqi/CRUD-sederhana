@@ -62,7 +62,7 @@ namespace CRUD_sederhana
                     // Menampilkan jumlah data untuk debugging
                     MessageBox.Show($"Jumlah Data: {dt.Rows.Count}", "Debugging Data", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    ClearForm();
+                    ClearForm();// Mengosongkan form setelah data dimuat
                 }
                 catch (Exception ex)
                 {
