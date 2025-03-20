@@ -95,8 +95,8 @@ namespace CRUD_sederhana
                         cmd.Parameters.AddWithValue("@Telepon", txtTelepon.Text.Trim());
                         cmd.Parameters.AddWithValue("@Alamat", txtAlamat.Text.Trim());
 
-                        int rowsAffected = cmd.ExecuteNonQuery();
-                        if (rowsAffected > 0)
+                        int rowsAffected = cmd.ExecuteNonQuery(); // Menjalankan perintah SQL
+                            if (rowsAffected > 0)
                         {
                             MessageBox.Show("Data berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             LoadData();
