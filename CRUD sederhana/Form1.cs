@@ -53,7 +53,7 @@ namespace CRUD_sederhana
                     conn.Open();// Membuka koneksi ke SQL Server
                     string query = "SELECT NIM AS [NIM], Nama, Email, Telepon, Alamat FROM Mahasiswa"; // Query SQL untuk mengambil data
                     SqlDataAdapter da = new SqlDataAdapter(query, conn); // Menggunakan adapter untuk menjalankan query
-                    DataTable dt = new DataTable();
+                    DataTable dt = new DataTable(); // Membuat objek DataTable untuk menampung data
                     da.Fill(dt);
 
                     dgvMahasiswa.AutoGenerateColumns = true;
