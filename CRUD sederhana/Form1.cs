@@ -89,25 +89,25 @@ namespace CRUD_sederhana
                     using (SqlCommand cmd = new SqlCommand(query, conn)) // Membuat perintah SQL
                     {
                         { // Menambahkan parameter ke query SQL untuk mencegah SQL Injection
-                        cmd.Parameters.AddWithValue("@NIM", txtNIM.Text.Trim());
-                        cmd.Parameters.AddWithValue("@Nama", txtNama.Text.Trim());
-                        cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim());
-                        cmd.Parameters.AddWithValue("@Telepon", txtTelepon.Text.Trim());
-                        cmd.Parameters.AddWithValue("@Alamat", txtAlamat.Text.Trim());
+                            cmd.Parameters.AddWithValue("@NIM", txtNIM.Text.Trim());
+                            cmd.Parameters.AddWithValue("@Nama", txtNama.Text.Trim());
+                            cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim());
+                            cmd.Parameters.AddWithValue("@Telepon", txtTelepon.Text.Trim());
+                            cmd.Parameters.AddWithValue("@Alamat", txtAlamat.Text.Trim());
 
-                        int rowsAffected = cmd.ExecuteNonQuery();
-                        if (rowsAffected > 0)
-                        {
-                            MessageBox.Show("Data berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            LoadData();
-                            ClearForm();
+                            int rowsAffected = cmd.ExecuteNonQuery();
+                            if (rowsAffected > 0)
+                            {
+                                MessageBox.Show("Data berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                LoadData();
+                                ClearForm();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Data tidak berhasil ditambahkan!", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
                         }
-                        else
-                        {
-                            MessageBox.Show("Data tidak berhasil ditambahkan!", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
-                }
+                    }  
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -140,7 +140,7 @@ namespace CRUD_sederhana
                                 if (rowsAffected > 0)
                                 {
                                     MessageBox.Show("Data berhasil dihapus!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                    LoadData();
+                                    LoadData(); // Memperbarui tampilan data setelah penghapusan
                                     ClearForm();
                                 }
                                 else
