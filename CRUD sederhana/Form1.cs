@@ -66,7 +66,7 @@ namespace CRUD_sederhana
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);// Menampilkan pesan error jika terjadi kesalahan
                 }
             }
         }
