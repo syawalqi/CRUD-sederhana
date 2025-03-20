@@ -95,13 +95,13 @@ namespace CRUD_sederhana
                         cmd.Parameters.AddWithValue("@Telepon", txtTelepon.Text.Trim());
                         cmd.Parameters.AddWithValue("@Alamat", txtAlamat.Text.Trim());
 
-                        int rowsAffected = cmd.ExecuteNonQuery(); // Menjalankan perintah SQL
-                            if (rowsAffected > 0)
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
                         {
                             MessageBox.Show("Data berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            LoadData(); // Memperbarui tampilan data setelah menambahkan
-                            ClearForm(); // Mengosongkan form input
-                            }
+                            LoadData();
+                            ClearForm();
+                        }
                         else
                         {
                             MessageBox.Show("Data tidak berhasil ditambahkan!", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -119,7 +119,7 @@ namespace CRUD_sederhana
 
         private void btnHapus_Click(object sender, EventArgs e)
         {
-            if (dgvMahasiswa.SelectedRows.Count > 0)
+            if (dgvMahasiswa.SelectedRows.Count > 0)// Memeriksa apakah ada baris yang dipilih
             {
                 DialogResult confirm = MessageBox.Show("Yakin ingin menghapus data ini?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (confirm == DialogResult.Yes)
