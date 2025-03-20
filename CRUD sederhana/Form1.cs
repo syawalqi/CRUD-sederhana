@@ -100,8 +100,8 @@ namespace CRUD_sederhana
                         {
                             MessageBox.Show("Data berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             LoadData(); // Memperbarui tampilan data setelah menambahkan
-                            ClearForm();
-                        }
+                            ClearForm(); // Mengosongkan form input
+                            }
                         else
                         {
                             MessageBox.Show("Data tidak berhasil ditambahkan!", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
