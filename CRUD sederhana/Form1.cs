@@ -130,7 +130,7 @@ namespace CRUD_sederhana
                         {
                             string nim = dgvMahasiswa.SelectedRows[0].Cells["NIM"].Value.ToString(); // Mendapatkan NIM dari baris yang dipilih
                             conn.Open();
-                            string query = "DELETE FROM Mahasiswa WHERE NIM = @NIM";
+                            string query = "DELETE FROM Mahasiswa WHERE NIM = @NIM";// Query untuk menghapus data berdasarkan NIM
 
                             using (SqlCommand cmd = new SqlCommand(query, conn))
                             {
