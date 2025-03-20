@@ -57,7 +57,7 @@ namespace CRUD_sederhana
                     da.Fill(dt); // Mengisi DataTable dengan hasil query
 
                     dgvMahasiswa.AutoGenerateColumns = true; // Mengatur DataGridView untuk otomatis menampilkan kolom
-                    dgvMahasiswa.DataSource = dt;
+                    dgvMahasiswa.DataSource = dt; // Menampilkan data di DataGridView
 
                     // Tambahkan ini untuk debugging
                     MessageBox.Show($"Jumlah Data: {dt.Rows.Count}", "Debugging Data", MessageBoxButtons.OK, MessageBoxIcon.Information);
