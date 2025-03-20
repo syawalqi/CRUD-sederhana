@@ -23,7 +23,7 @@ namespace CRUD_sederhana
 
         public Form1() // Konstruktor Form1
         {
-            InitializeComponent();
+            InitializeComponent(); // Inisialisasi komponen UI
         }
 
         // Event saat form pertama kali dimuat
