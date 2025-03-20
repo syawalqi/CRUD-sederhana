@@ -50,7 +50,7 @@ namespace CRUD_sederhana
             {
                 try
                 {
-                    conn.Open();
+                    conn.Open();// Membuka koneksi ke SQL Server
                     string query = "SELECT NIM AS [NIM], Nama, Email, Telepon, Alamat FROM Mahasiswa";
                     SqlDataAdapter da = new SqlDataAdapter(query, conn);
                     DataTable dt = new DataTable();
