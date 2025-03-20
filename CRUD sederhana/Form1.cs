@@ -170,7 +170,7 @@ namespace CRUD_sederhana
                 return;
             }
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(connectionString)) // Membuka koneksi database
             {
                 try
                 {
