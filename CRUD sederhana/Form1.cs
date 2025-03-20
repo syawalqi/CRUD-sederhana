@@ -13,6 +13,8 @@ using System.Windows.Forms; // Digunakan untuk membangun aplikasi Windows Forms
 // Namespace untuk proyek CRUD sederhana
 namespace CRUD_sederhana
 {
+
+    // Kelas utama Form1 yang merupakan turunan dari Form
     public partial class Form1 : Form
     {
         private string connectionString = "Data Source=LAPTOP-PFIH6R5H\\GALIHMAULANA;Initial Catalog=OrganisasiMahasiswa;Integrated Security=True";
