@@ -56,7 +56,7 @@ namespace CRUD_sederhana
                     DataTable dt = new DataTable(); // Membuat objek DataTable untuk menampung data
                     da.Fill(dt); // Mengisi DataTable dengan hasil query
 
-                    dgvMahasiswa.AutoGenerateColumns = true;
+                    dgvMahasiswa.AutoGenerateColumns = true; // Mengatur DataGridView untuk otomatis menampilkan kolom
                     dgvMahasiswa.DataSource = dt;
 
                     // Tambahkan ini untuk debugging
