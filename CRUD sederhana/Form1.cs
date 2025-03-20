@@ -77,7 +77,7 @@ namespace CRUD_sederhana
             using (SqlConnection conn = new SqlConnection(connectionString))// Membuka koneksi database
             {
                 try
-                {
+                { // Validasi apakah semua input sudah terisi
                     if (txtNIM.Text == "" || txtNama.Text == "" || txtEmail.Text == "" || txtTelepon.Text == "")
                     {
                         MessageBox.Show("Harap isi semua data!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
